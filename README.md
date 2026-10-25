@@ -174,9 +174,21 @@ SyncScreen/
 └── README.md
 ```
 
+
 ## Screenshots
 
-Add screenshots of the home page, an active watch room, and the mobile layout. For example, store them in `docs/screenshots/` and embed them here with relative Markdown image links once the files are added.
+### Login Page
+![SyncScreen Login Page](docs/screenshots/login.png)
+
+### Home Page
+![SyncScreen Home Page](docs/screenshots/homepage.png)
+
+### Active Watch Room
+![SyncScreen Watch Room](docs/screenshots/watch-room.png)
+
+### Mobile Layout
+![SyncScreen Mobile Layout](docs/screenshots/mobile.png)
+
 
 ## Current Limitations
 
