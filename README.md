@@ -175,19 +175,43 @@ SyncScreen/
 ```
 
 
-## Screenshots
 
-### Login Page
-![SyncScreen Login Page](docs/screenshots/login.png)
+## 📸 Screenshots
 
-### Home Page
-![SyncScreen Home Page](docs/screenshots/homepage.png)
+Explore the SyncScreen interface across authentication, room management,
+real-time watch parties, and mobile devices.
 
-### Active Watch Room
-![SyncScreen Watch Room](docs/screenshots/watch-room.png)
+<div align="center">
 
-### Mobile Layout
-![SyncScreen Mobile Layout](docs/screenshots/mobile.png)
+  <table>
+    <tr>
+      <td align="center" width="50%">
+        <h3>🔐 Login Page</h3>
+        <img src="docs/screenshots/login.png" alt="SyncScreen Login Page" width="100%">
+        <p>Simple and intuitive entry into SyncScreen.</p>
+      </td>
+      <td align="center" width="50%">
+        <h3>🏠 Home Page</h3>
+        <img src="docs/screenshots/homepage.png" alt="SyncScreen Home Page" width="100%">
+        <p>Create a new watch party or join an existing room.</p>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="50%">
+        <h3>🎬 Active Watch Room</h3>
+        <img src="docs/screenshots/watch-room.png" alt="SyncScreen Active Watch Room" width="100%">
+        <p>Watch together with synchronized playback, chat, and participants.</p>
+      </td>
+      <td align="center" width="50%">
+        <h3>📱 Mobile Layout</h3>
+        <img src="docs/screenshots/mobile.png" alt="SyncScreen Mobile Layout" width="100%">
+        <p>A responsive experience designed for mobile devices.</p>
+      </td>
+    </tr>
+  </table>
+
+</div>
+
 
 
 ## Current Limitations
