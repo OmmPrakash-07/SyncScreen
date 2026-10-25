@@ -573,7 +573,7 @@ function WatchRoom() {
               }}
             >
               <YouTube
-                videoId={room?.videoId ?? "jfKfPfyJRdk"}
+                videoId={room?.videoId ?? "1lCoQi1IcQ0"}
                 className="w-full"
                 iframeClassName="aspect-video w-full"
                 onReady={onPlayerReady}

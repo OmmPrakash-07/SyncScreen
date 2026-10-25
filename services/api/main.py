@@ -33,7 +33,7 @@ class Participant:
 class Room:
     room_id: str
     host_id: str
-    video_id: str = "jfKfPfyJRdk"
+    video_id: str = "1lCoQi1IcQ0"
     play_state: Literal["playing", "paused"] = "paused"
     current_time: float = 0.0
     participants: dict[str, Participant] = field(default_factory=dict)

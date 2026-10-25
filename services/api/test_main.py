@@ -109,7 +109,7 @@ def test_malformed_playback_and_video_payloads_are_rejected():
         {"type": "change_video", "payload": {"videoId": "bad"}},
     ])
     assert room.current_time == 0
-    assert room.video_id == "jfKfPfyJRdk"
+    assert room.video_id == "1lCoQi1IcQ0"
     assert sum(m.get("type") == "error" for m in socket.sent) == 2
     assert not any(
         message.get("type") == "sync_state"
