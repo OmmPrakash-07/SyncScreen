@@ -12,9 +12,18 @@ Watch YouTube videos together in real time. Create a room, invite friends, and e
 
 ---
 
-## Overview
+## Architecture Overview
 
-**SyncScreen** is a collaborative watch-party web app designed to make watching YouTube with friends feel shared, even when everyone is in a different place. Create or join a room and interact with other participants while watching videos together.
+SyncScreen uses Next.js, React, and TypeScript for the frontend, with FastAPI and WebSockets powering the backend.
+
+1. **Room creation and joining:** The frontend calls the FastAPI REST API to create or join a watch party.
+2. **WebSocket connection:** Each participant connects to the backend using the room identifier. The backend uses the connection to exchange real-time room events.
+3. **Playback synchronization:** When an authorized user plays, pauses, seeks, or changes the video, the backend distributes the corresponding event to connected participants in the room.
+4. **Role-based authorization:** The backend should validate the sender's role before accepting privileged actions. Hiding controls in the frontend alone is not sufficient security.
+5. **Approval workflow:** A participant submits a request for a restricted action. The Host or Moderator approves or rejects it, and only an approved request is applied to the room.
+6. **Chat and reactions:** Room events can also carry chat messages, typing indicators, and emoji reactions.
+
+The frontend is deployed on Vercel, and the FastAPI backend is deployed on Render. WebSockets provide the persistent, bidirectional connection needed for real-time updates without repeatedly polling the API.
 
 ## Features
 
